@@ -1,0 +1,42 @@
+program soal3;
+
+uses crt;
+
+var
+    x,y:integer;
+    
+begin
+clrscr;
+    write('Masukkan titik x :');
+    readln(x);
+    write('Masukkan titik y :');
+    readln(y);
+    
+    if (x>0) and (y>0) then
+    begin
+        write('Titik tersebut berada di kuadran 1');
+    end
+    
+    else if (x<0) and (y>0) then
+    begin
+        write('Titik tersebut berada di kuadran 2');
+    end
+    
+    else if (x<0) and (y<0) then
+    begin
+        write('Titik tersebut berada di kuadran 3');
+    end
+    
+    else if (x>0) and (y<0) then
+    begin
+        write('Titik tersebut berada di kuadran 4');
+    end
+    
+    else
+    begin
+        write('Tidak termasuk ke dalam kuadran');
+    end;
+    
+    readln;
+    
+end.
