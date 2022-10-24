@@ -1,0 +1,49 @@
+uses crt;
+
+var
+    i,j,k,n:integer;
+
+begin
+clrscr;
+    write('Masukkan nilai n :');
+    readln(n);
+    writeln('Bentuk gambar :');
+    
+     for j:= 1 to n do
+     begin
+        
+        for k:= n downto j do 
+    begin
+    
+        write(' ');
+        end;
+        
+        for k := 1 to j do
+        begin
+            write('* ');
+        end; 
+        
+        writeln;
+        end;
+        
+        for j:= n-1 downto 1 do
+     begin
+        
+        for k:= n downto j do 
+    begin
+    
+        write(' ');
+        end;
+        
+        for k := 1 to j do
+        begin
+            write('* ');
+        end; 
+        
+        writeln;
+        end;
+        
+        
+    readln;
+    
+end.
