@@ -1,0 +1,34 @@
+program soal2;
+
+uses crt;
+
+var
+    nama_awal,nama_akhir: string;
+    c,k,r,f: real;
+    suhu: integer;
+    
+begin
+clrscr;
+
+    write('Masukkan nama awal :');
+    readln(nama_awal);
+    write('Masukkan nama akhir :');
+    readln(nama_akhir);
+    write('Masukkan suhu hari ini dalam celcius :');
+    readln(c);
+    
+    f:=9/5*c+32;
+    r:=4/5*c;
+    k:=c+273;
+    
+    writeln(c:5:0,' derajat celcius =', r:5:0,' derajat reamur');
+    writeln(c:5:0,' derajat celcius =', f:5:0,' derajat farenheit');
+    writeln(c:5:0,' derajat celcius =', k:5:0,' derajat kelvin');
+    
+    writeln;
+    
+    writeln('Halo ',  nama_awal +  nama_akhir , ' hari ini bersuhu',r:5:0,' reamur/',k:5:0,' kelvin/',f:5:0,' farenheit');
+    
+    readln;
+    
+end.
